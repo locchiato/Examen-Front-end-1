@@ -1,0 +1,71 @@
+@import url('./var.css');
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 60px;
+}
+
+nav {
+    max-width: 400px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#menu .patita::before {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+footer {
+    align-items: center;
+}
+
+#top,
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 30px;
+    align-items: center;
+}
+
+#top,
+#footer-bottom {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-weight: 700;
+}
+
+header div span {
+    color: black;
+}
+
+#logo::before,
+#logo::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background-image: url('../img/Cat.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo::after {
+    background-image: url('../img/Dog.svg');
+}

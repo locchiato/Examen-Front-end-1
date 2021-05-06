@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --primary-color: #F0A83E;
+    --secondary-color: blue;
+    --primary-font-size: 16px;
+    --primary-background-color: gainsboro;
+    --secondary-background-color: black;
+    --page-min-width: 1024px;
+    --page-min-height: 574px;
+    --gato-background: url('../img/cat2.svg');
+    --perro-background: url('../img/dog2.svg');
+    --main-height: calc(100vh - 100px - 150px);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

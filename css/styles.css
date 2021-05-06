@@ -1,0 +1,159 @@
+@import url('var.css');
+@import url('header.css');
+@import url('footer.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: var(--main-height);
+    padding: 40px 20px;
+}
+
+#leng {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leng span::after {
+    content: "";
+    height: 10px;
+    width: 30px;
+    background-image: url('../img/down.svg')
+}
+
+.gato button,
+.perro button {
+    background-color: var(--primary-color);
+    color: black;
+    width: 90px;
+    font-weight: 400;
+    font-size: 7.5px;
+    border: none;
+    padding: 6px 9px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#user-data {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.gato,
+.perro {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.perro {
+    align-items: flex-end;
+}
+
+#content {
+    display: flex;
+    min-height: 250px;
+    min-width: 750px;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.gato {
+    height: 250px;
+    width: 360px;
+    background-image: var(--gato-background);
+    background-repeat: no-repeat;
+}
+
+.perro {
+    height: 250px;
+    width: 360px;
+    background-image: var(--perro-background);
+    background-repeat: no-repeat;
+}
+
+#hamburguesa {
+    width: 20px;
+    height: 15px;
+    display: none;
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+input[type="email"] {
+    width: 50%;
+}
+
+input[type="submit"] {
+    background: black;
+    width: 30%;
+}
+
+input {
+    padding: 15px;
+    border-radius: 15px;
+    height: 50px;
+}
+
+#subs-input {
+    min-width: 400px;
+    height: 50px;
+}
+
+#subs {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#subs h2 {
+    display: flex;
+    align-items: center;
+}
+
+#subs h2::before {
+    content: "";
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url('../img/enviar-correo.svg');
+    background-repeat: no-repeat;
+}
+
+
+/* modulo para configurar media queries  */
+
+@media (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    #hamburguesa {
+        display: block;
+    }
+    #subs,
+    section {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    #content {
+        height: 530px;
+    }
+}
