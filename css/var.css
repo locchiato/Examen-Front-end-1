@@ -7,8 +7,8 @@
     --secondary-background-color: black;
     --page-min-width: 1024px;
     --page-min-height: 574px;
-    --gato-background: url('../img/cat2.svg');
-    --perro-background: url('../img/dog2.svg');
+    --gato-background: url('../img/Cat-background.png');
+    --perro-background: url('../img/Dog-Background.png');
     --main-height: calc(100vh - 100px - 150px);
 }
 
